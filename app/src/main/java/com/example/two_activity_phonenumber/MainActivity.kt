@@ -8,7 +8,6 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 
-
 class MainActivity : AppCompatActivity() {
 
     companion object {
