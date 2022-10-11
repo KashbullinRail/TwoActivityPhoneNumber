@@ -7,11 +7,13 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/etStartAction_2"
+        android:id="@+id/etEnteredPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please write number"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="320dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:text="Please enter phone number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,12 +22,12 @@
         android:id="@+id/btnGoActivityTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go Activity Two"
-        app:layout_constraintBottom_toTopOf="@+id/etStartAction_2"
+        android:layout_marginTop="0dp"
+        android:text="Entered number to check"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.932" />
+        app:layout_constraintTop_toBottomOf="@+id/etEnteredPhoneNumber"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
