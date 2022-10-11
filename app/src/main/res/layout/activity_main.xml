@@ -13,7 +13,8 @@
         android:layout_marginTop="320dp"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
-        android:text="Please enter phone number"
+        android:text=""
+        android:hint="Please enter phone number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

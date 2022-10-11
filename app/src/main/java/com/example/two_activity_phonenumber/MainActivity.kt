@@ -16,12 +16,8 @@ class MainActivity : AppCompatActivity() {
         val etEnteredPhoneNumber = findViewById<EditText>(R.id.etEnteredPhoneNumber)
         val btnGoActivityTwo = findViewById<Button>(R.id.btnGoActivityTwo)
 
-        etEnteredPhoneNumber.setOnClickListener {
-            etEnteredPhoneNumber.setText("")
-        }
-
         btnGoActivityTwo.setOnClickListener {
-            val r = Regex("^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}\$")
+            val r = Regex(REGEX_PHONE)
             if (r.matches(etEnteredPhoneNumber.text.toString())) {
                 val intent = Intent(this, SecondActivity::class.java)
                 intent.putExtra("phoneNumber", etEnteredPhoneNumber.text.toString())
