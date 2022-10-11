@@ -14,14 +14,11 @@ class SecondActivity : AppCompatActivity(R.layout.activity_second) {
         super.onCreate(savedInstanceState)
 
         val etPutPhoneNumber = findViewById<EditText>(R.id.etPutPhoneNumber)
-        val btnGoPhone = findViewById<Button>(R.id.btnGoPhone)
+        var phone = "1111111"
 
-        btnGoPhone.setOnClickListener {
-            setResult(Activity.RESULT_OK, Intent().apply {
-                putExtra("phoneNumber", "${etPutPhoneNumber.text}")
-            }
-            )
-            finish()
-        }
+        phone = intent.getStringExtra("phone").toString()
+
+        etPutPhoneNumber.setText(phone)
+
     }
 }
